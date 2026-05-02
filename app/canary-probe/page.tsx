@@ -5,7 +5,7 @@
  * Playwright loads the route on the Vercel preview, waits for `section`
  * to be visible, screenshots it, compares before/after.
  */
-export const probedAt = '2026-05-02T00:00:00.000Z';
+export const probedAt = '2026-05-02T20:46:16.503Z';
 
 export default function CanaryProbe() {
   return (

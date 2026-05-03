@@ -7,7 +7,7 @@
  * arbitrary named exports on Page modules. Local const is fine.
  */
 export default function CanaryProbe() {
-  const probedAt = '2026-05-02T20:55:00.000Z';
+  const probedAt = '2026-05-03T00:13:46.650Z';
   return (
     <section data-testid="canary-probe">
       <h1>Canary probe</h1>

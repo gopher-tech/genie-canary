@@ -4,4 +4,4 @@ This file is rewritten by the canary cron every cycle to trigger
 a synthetic Genie Review run. It is intentionally trivial — the
 canary measures the pipeline, not review quality.
 
-Last probe: 2026-06-04T23:30:31.018Z
+Last probe: 2026-06-05T00:01:27.157Z

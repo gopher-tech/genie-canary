@@ -1,13 +1,13 @@
 /**
- * The canary cron rewrites this file every cycle. The body holds a single
- * timestamp constant so the diff is tiny and trivially reviewable. The
- * <section> wrapper is what the proof-gen pipeline asserts on:
- * Playwright loads the route on the Vercel preview, waits for `section`
- * to be visible, screenshots it, compares before/after.
+ * Canary probe page — rewritten by the genie-mono canary cron every cycle.
+ * The proof-gen pipeline asserts on the <section> wrapper: it loads this
+ * route on the Vercel preview, waits for `section` to be visible, and
+ * screenshots it. The probedAt constant is the only line that changes
+ * per cycle. NOTE: must NOT be a top-level export — Next.js disallows
+ * arbitrary named exports on Page modules. Local const is fine.
  */
-export const probedAt = '2026-05-02T00:00:00.000Z';
-
 export default function CanaryProbe() {
+  const probedAt = '2026-05-03T00:13:46.650Z';
   return (
     <section data-testid="canary-probe">
       <h1>Canary probe</h1>
@@ -15,3 +15,4 @@ export default function CanaryProbe() {
     </section>
   );
 }
+// e2e-verify 10851 2026-05-20T19:14:34Z
